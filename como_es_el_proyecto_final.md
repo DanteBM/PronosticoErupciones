@@ -2,6 +2,7 @@ Proyecto final de Minería de Datos
 ----------------------------------
 
 80% código
+
 20% presentación y exposición
 
 Objetivo: Resolver un problema de Ciencia de Datos utilizando los conocimientos adquiridos a lo largo de la materia.
