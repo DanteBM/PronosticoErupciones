@@ -1,11 +1,12 @@
 Proyecto final de Minería de Datos
+----------------------------------
 
 80% código
 20% presentación y exposición
 
 Objetivo: Resolver un problema de Ciencia de Datos utilizando los conocimientos adquiridos a lo largo de la materia.
 
-Premisas:
+## Premisas
 * En español o inglés
 * Utilizar uno o más datasets públicos
 * Anteproyecto debe tener el visto bueno de Favio
@@ -15,20 +16,20 @@ Premisas:
 * Opcional: Usar plataformas en la nube (AWS, Azure, Google Cloud)
 * 20 minutos de presentación final
 
-Fechas: 
+## Fechas
 * Se entrega un anteproyecto antes del 4 de diciembre (se contará como tarea aparte)
 * Entrega del código y doc final es máximo el 15 de enero
 * Presentación final se hará en la semana del 18 de enero
 
 
-Anteproyecto:
+## Anteproyecto
 * Título del proyecto
 * Esquema del proyecto (que chuchas vamos hacer, como una idea, y como chuchas piensan resolverlo)
 * Justificación del proyecto 
 * Conjuntos de datos a usar (poner links)
 * Resultados deseados del proyecto
 
-Estructura básica del proyecto (Se puede expandir)
+## Estructura básica del proyecto (Se puede expandir)
 * Título
 * Resumen (abstract)
 * Introducción (planteamiento, etapas)
@@ -49,21 +50,21 @@ Estructura básica del proyecto (Se puede expandir)
 * Conclusiones y recomendaciones
 * Referencias
 
-Documento final
+## Documento final
 * Contiene todo lo de la estructura del proyecto, en forma de doc xD (casi no tiene código al menos que sea muy necesario)
 
-Código final:
+## Código final:
 * Notebook estructurado que responda todo lo planteado en la estructura. No es solamente código, también hay que hablar
 
 Recomendación:
 Haz todo en el notebook y ya después, extrae el texto y lo pones en el doc
 
-Presentación final:
+## Presentación final:
 * No código (al menos que sea estrictamente necesario)
 * PowerPoint o Keynote o un Beam
 * Debe cubrir lo que consideremos más relevante y sus resultados para ser explicados en 20 minutos.
 * Si es en parejas, ambas personas deben hablar y ser capaces de explicar todo
 
-Bonus point:
+## Bonus point:
 * Si crean un "blog" (artículo cutre) sobre el proyecto, y lo publican (Favio nos dice cómo y en dónde) para el 29 de enero, tienen asegurados 1.5 puntos del proyecto
 
