@@ -42,7 +42,7 @@ Objetivo: Resolver un problema de Ciencia de Datos utilizando los conocimientos 
         + Mapeo del sistema (ecuaciones relevantes y métricas)
         + Definición de métricas adecuadas
         + Exploración de datos
-        + Preparaciñon de datos
+        + Preparación de datos
         + Métodos y modelos
         + Evaluación de modelos (búsqueda de hiperparámetros, etc)
     - Análisis de resultados (interpretación)
