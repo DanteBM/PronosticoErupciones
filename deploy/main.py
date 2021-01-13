@@ -96,7 +96,7 @@ if __name__ == "__main__":
     with open("texto.txt", mode="rt") as file:
         text = file.read()
 
-    st.set_page_config(page_title="Pronóstico de erupciones")  # Título en pestaña
+    st.set_page_config(page_title="Pronóstico de erupciones")  # Tab's title
     
     # Sidebar
     st.sidebar.title("Acerca de")
