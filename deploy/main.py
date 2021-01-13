@@ -17,7 +17,7 @@ from sklearn.metrics import mean_absolute_error
 
 from scipy.signal import find_peaks, peak_prominences, periodogram, peak_widths
 
-def plot_amp_ply(df):
+def graph_amp_ply(df):
     """Graph sensor data
     Parameters:
         df: pd.DataFrame
@@ -36,17 +36,17 @@ def plot_amp_ply(df):
     st.plotly_chart(fig, use_container_width=True)
 
 def standardize(df):
-    """Standarize columns from dataframe
+    """Standardize columns from dataframe
     Parameters:
         df: pd.DataFrame
         Dataframe with 10 columns, corresponding to data from sensors
     Returns:
         standarized_df: pd.Dataframe
-        Dataframe with standarized columns
+        Dataframe with standardized columns
     """
     aggs = df.agg([np.nanmean, np.nanstd]).astype("float16")
-    standardized_df = (df - aggs.loc["nanmean",:])/ aggs.loc["nanstd",:]
-    return standardized_df
+    standarized_df = (df - aggs.loc["nanmean",:])/ aggs.loc["nanstd",:]
+    return standarized_df
 
 def get_features(df):
     """Get features from sensor data
@@ -128,7 +128,7 @@ if __name__ == "__main__":
         # Data loaded
         if df is not None:
             st.write(df.describe()) # stadistics
-            plot_amp_ply(df) # Visualization
+            graph_amp_ply(df) # Visualization
             
             # Resultads
             standardized_df = standardize(df)
