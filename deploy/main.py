@@ -17,7 +17,7 @@ from sklearn.metrics import mean_absolute_error
 
 from scipy.signal import find_peaks, peak_prominences, periodogram, peak_widths
 
-def graph_amp_ply(df):
+def plot_amp_ply(df):
     """Graph sensor data
     Parameters:
         df: pd.DataFrame
@@ -35,7 +35,7 @@ def graph_amp_ply(df):
     fig.update_layout(height = 1000, width = 950, title_text = "Diagramas de amplitudes", title_font_size = 30)
     st.plotly_chart(fig, use_container_width=True)
 
-def standarize(df):
+def standardize(df):
     """Standarize columns from dataframe
     Parameters:
         df: pd.DataFrame
@@ -45,8 +45,8 @@ def standarize(df):
         Dataframe with standarized columns
     """
     aggs = df.agg([np.nanmean, np.nanstd]).astype("float16")
-    standarized_df = (df - aggs.loc["nanmean",:])/ aggs.loc["nanstd",:]
-    return standarized_df
+    standardized_df = (df - aggs.loc["nanmean",:])/ aggs.loc["nanstd",:]
+    return standardized_df
 
 def get_features(df):
     """Get features from sensor data
@@ -128,11 +128,11 @@ if __name__ == "__main__":
         # Data loaded
         if df is not None:
             st.write(df.describe()) # stadistics
-            graph_amp_ply(df) # Visualization
+            plot_amp_ply(df) # Visualization
             
             # Resultads
-            standarized_df = standarize(df)
-            features = get_features(standarized_df)
+            standardized_df = standardize(df)
+            features = get_features(standardized_df)
             features = np.array(features).reshape(1,-1)
             model = lgb.Booster(model_file="model.txt") # Load trained model
             time_to_eruption = model.predict(features)[0]

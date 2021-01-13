@@ -48,6 +48,12 @@ Este documento intenta explicar qué contiene cada csv para que no hayan confusi
 
 - submission6.csv: Contiene el sexto archivo que se subió a kaggle para evaluación. Se usa CV y ESR en los datos sin estandarizar pero ahora se hace el análisis de señales chido, ya se tiene en cuenta esto de sólo utilizar los datos no nulos en el periodograma.
 
+- submission\_estandarizados.csv: Archivo que se subió a kaggle para evaluación, se usa CV y ESR con los datos estandarizados y con la mejora del periodograma.
+
+- submission\_estandarizados2.csv: Contiene lo mismo que "submission\_estandarizados.csv" pero ahora con los datos imputados.
+
+- submission\_normal.csv: Contiene lo mismo que "submission\_estandarizados.csv" pero con los datos sin estandarizar y sin imputar. 
+
 - train.csv: Contiene el "segment\_id" y el "time\_to\_eruption" de los archivos de entrenamiento.
 
 - whole\_stats.csv: Contiene las estadísticas generales de los 10 sensores tomando en cuenta todos los archivos de entrenamiento. Es como un _describe_ general. 
