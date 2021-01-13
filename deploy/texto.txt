@@ -1,0 +1,7 @@
+Alrededor del mundo hay varios tipos de desastres naturales que afectan desde las comunidades más marginadas hasta las más prósperas, por lo que uno de los desafíos más grandes para los científicos ha sido intentar predecir este tipo de eventos. Este desafío abarca desde el modelado del clima a nivel mundial mediante predicciones numéricas hasta la predicción de erupciones volcánicas.
+
+Desde hace años se estudia el comportamiento de los volcanes mediante sensores que están recolectando en tiempo real lo que pasa dentro y fuera de éstos.
+
+Europa es uno de los continentes que también se puede ver muy afectado por este tipo de desastres, y el *National Institute of Geophysics and Volcanology* está consiente de ello, por lo que ha estado desempeñando un papel importante en cuanto a su liberación de datos respecto a sensores. Esta iniciativa se podría llevar a volcanes del país o hasta del continente y atacar con los mismos métodos con los que el instituto pretende hacerlo.
+
+----------------------------------
