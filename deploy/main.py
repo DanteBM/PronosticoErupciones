@@ -121,13 +121,18 @@ if __name__ == "__main__":
     if uploaded_file:
         try:
             df = pd.read_csv(uploaded_file)
+            if len(df.columns) != 10:
+                raise ValueError("El dataframe debe tener solamente 10 columnas (una por sensor)")
+            if not all("sensor" in column for column in df.columns):
+                raise ValueError("Las columnas deben llevar por nombre 'sensor_#'")
         except Exception as e:
             st.error(e)
             df = None
      
         # Data loaded
         if df is not None:
-            st.write(df.describe()) # stadistics
+            st.write("**Estadísticas:**")
+            st.write(df.describe().T) # stadistics
             graph_amp_ply(df) # Visualization
             
             # Resultads
